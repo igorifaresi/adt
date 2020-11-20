@@ -1,0 +1,13 @@
+#/bin/sh
+
+printHelp() {
+  echo "Invalid usage"
+}
+
+[ -f ".adt_sender.json" ] && [ -f ".adt_receiver.json" ] && { echo "Broken package..."; exit 1; }
+
+[ "$1" = "init" ] && {
+
+} || [ "$1" = "" ] && {
+
+}
